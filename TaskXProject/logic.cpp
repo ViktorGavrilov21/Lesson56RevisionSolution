@@ -10,3 +10,19 @@
 // T4 = 1 + 2 + 3 + 4 = 10
 // T5 = 1 + 2 + 3 + 4 + 5 = 15
 // T6 = 1 + 2 + 3 + 4 + 5 + 6 = 21
+
+int recursion(int index) {
+	if (index == 1) {
+		return 1;
+	}
+
+	return recursion(index - 1) + index;
+}
+
+int get_triangle_number(int index) {
+	if (index < 1) {
+		return index;
+	}
+
+	return recursion(index);
+}
