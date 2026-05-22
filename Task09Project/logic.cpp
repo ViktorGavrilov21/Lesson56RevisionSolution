@@ -9,7 +9,7 @@ int recursion(int number) {
 		return 0;
 	}
 
-	int digit = number % 5 == 0 ? number % 10 : 0;
+	int digit = number % 5 == 0 ? 5 : 0;
 
 	return recursion(number / 10) + digit;
 }

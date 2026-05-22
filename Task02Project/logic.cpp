@@ -7,7 +7,7 @@
 // а каждое следующее – сумме двух предыдущих: 1, 1, 2, 3, 5, 8, 13, …
 
 int recursion(int index) {
-	if (index == 1 || index == 2) {
+	if (index <= 2) {
 		return 1;
 	}
 

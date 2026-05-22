@@ -5,8 +5,8 @@
 // которая возвращает сумму кубов чисел от 1 до N.
 
 int recursion(int number) {
-	if (number == 0) {
-		return 0;
+	if (number == 1) {
+		return 1;
 	}
 	return recursion(number - 1) + number * number * number;
 }

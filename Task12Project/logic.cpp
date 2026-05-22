@@ -12,7 +12,8 @@ int recursion(int index) {
 	if (index == 1) {
 		return 1;
 	}
-	return recursion(index - 1) + index - 1;
+	index--;
+	return recursion(index) + index;
 }
 
 int get_number(int index) {
